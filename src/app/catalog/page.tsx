@@ -7,14 +7,14 @@ import { motion, Variants } from "framer-motion";
 import styles from "./page.module.css";
 
 const products = [
-  { id: 1, title: "Jute Hand-Woven Rug", price: "₹4,500", image: "https://images.unsplash.com/photo-1600166898405-da9535204843?auto=format&fit=crop&q=80&w=600", tag: "Best Seller", vendor: "Varanasi Weavers" },
-  { id: 2, title: "Antique Brass Lamp", price: "₹2,850", image: "https://images.unsplash.com/photo-1513506003901-1e6a229e9d15?auto=format&fit=crop&q=80&w=600", vendor: "Moradabad Artisans" },
-  { id: 3, title: "Zardosi Cushion", price: "₹1,200", image: "https://images.unsplash.com/photo-1629838048995-2ac1b24bf29c?auto=format&fit=crop&q=80&w=600", tag: "New", vendor: "Silk Route" },
-  { id: 4, title: "Blue Pottery Vase", price: "₹950", image: "https://images.unsplash.com/photo-1596541334960-b96fd4543d23?auto=format&fit=crop&q=80&w=600", vendor: "Jaipur Ceramics" },
-  { id: 5, title: "Block-Print Throw", price: "₹1,850", image: "https://images.unsplash.com/photo-1578500494191-c276be869b35?auto=format&fit=crop&q=80&w=600", vendor: "Kutch Co-op" },
-  { id: 6, title: "Terracotta Wall Art", price: "₹750", image: "https://images.unsplash.com/photo-1620067644919-482f3efcfbc8?auto=format&fit=crop&q=80&w=600", vendor: "Kolkata Clay" },
-  { id: 7, title: "Teak Wood Side Table", price: "₹8,900", image: "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&q=80&w=600", tag: "Sale", vendor: "Saharanpur Wood" },
-  { id: 8, title: "Cane Fruit Bowl", price: "₹1,150", image: "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&q=80&w=600", vendor: "Goa Weaves" },
+  { id: 1, title: "Halo Crystal Ring Lamp", price: "₹4,500", image: "/Halo Crystal Ring Lamp.png", tag: "Best Seller", vendor: "Crystal Aura" },
+  { id: 2, title: "Floral Glow Table Lamp", price: "₹2,850", image: "/Floral Glow Table Lamp.png", vendor: "Lumina" },
+  { id: 3, title: "Zen Buddha Aura Lamp", price: "₹1,200", image: "/Zen Aura Lamp.png", tag: "New", vendor: "Zenith" },
+  { id: 4, title: "Royal Crystal Tassel Pendant Lamp", price: "₹4,950", image: "/Royal Crystal Tassel Pendant Lamp.png", vendor: "Royal Lighting" },
+  { id: 5, title: "Turquoise Crown Crystal Pendant", price: "₹3,850", image: "/Turquoise Crown Crystal Pendant Lamp.png", vendor: "Crown Decor" },
+  { id: 6, title: "Ruby Crystal Fringe Pendant Lamp", price: "₹2,750", image: "/Ruby Crystal Fringe Pendant Lamp.png", vendor: "Ruby Lights" },
+  { id: 7, title: "Vintage Gear Wall Clock", price: "₹8,900", image: "/Vintage Gear Wall Clock.png", tag: "Sale", vendor: "Timeless" },
+  { id: 8, title: "Stone Mosaic Designer Vase", price: "₹1,150", image: "/Stone Mosaic Designer Vase.png", vendor: "Mosaic Craft" },
 ];
 
 const staggerContainer: Variants = {

@@ -11,28 +11,28 @@ const collections = [
     id: 1,
     title: "The Regal Rajasthan",
     description: "Inspired by the palaces of Jaipur, featuring intricate mirror work and vibrant textiles.",
-    image: "https://images.unsplash.com/photo-1605814578144-d8b368f54b61?auto=format&fit=crop&q=80&w=1200",
+    image: "/Ruby Crystal Fringe Pendant Lamp.png",
     itemCount: 24,
   },
   {
     id: 2,
     title: "Earthy Terracottas",
     description: "Raw, unglazed clay pieces that bring the warmth of rural Indian soil to your urban sanctuary.",
-    image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&q=80&w=1200",
+    image: "/Stone Mosaic Designer Vase.png",
     itemCount: 18,
   },
   {
     id: 3,
     title: "Sacred Woods",
     description: "Hand-carved teak and rosewood furniture pieces echoing ancient temple architecture.",
-    image: "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&q=80&w=1200",
+    image: "/Vintage Gear Wall Clock.png",
     itemCount: 12,
   },
   {
     id: 4,
     title: "Monsoon Weaves",
     description: "Lightweight cottons and linens dyed in the indigo and earthy greens of the Indian monsoon.",
-    image: "https://images.unsplash.com/photo-1578500494191-c276be869b35?auto=format&fit=crop&q=80&w=1200",
+    image: "/Metropolitan Street Canvas Painting.png",
     itemCount: 36,
   }
 ];

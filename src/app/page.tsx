@@ -8,16 +8,16 @@ import styles from "./page.module.css";
 
 // Dummy data
 const textiles = [
-  { id: 1, title: "Mulberry Silk Cushions", price: "₹2,499", image: "https://images.unsplash.com/photo-1595514535495-928e8bad857a?auto=format&fit=crop&q=80&w=600" },
-  { id: 2, title: "Hand Block Cotton Throws", price: "₹3,850", image: "https://images.unsplash.com/photo-1578500494191-c276be869b35?auto=format&fit=crop&q=80&w=600" },
-  { id: 3, title: "Heritage Wall Tapestry", price: "₹12,500", image: "https://images.unsplash.com/photo-1505691938895-1758d7bef511?auto=format&fit=crop&q=80&w=600" },
-  { id: 4, title: "Zari Embroidered Runner", price: "₹4,200", image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=600" },
+  { id: 1, title: "Ram Mandir Illuminated Wall Frame", price: "₹2,499", image: "/Illuminated Wall Frame.png" },
+  { id: 2, title: "Om Mandala LED Wall Art", price: "₹3,850", image: "/LED Wall Art.png" },
+  { id: 3, title: "Metropolitan Street Canvas Painting", price: "₹12,500", image: "/Metropolitan Street Canvas Painting.png" },
+  { id: 4, title: "Emerald Falls Nature Canvas", price: "₹4,200", image: "/Emerald Falls Nature Canvas.png" },
 ];
 
 const pottery = [
-  { id: 1, title: "Terracotta Vase", image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&q=80&w=800" },
-  { id: 2, title: "Ceramic Bowl Set", image: "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&q=80&w=800" },
-  { id: 3, title: "Clay Planter", image: "https://images.unsplash.com/photo-1596541334960-b96fd4543d23?auto=format&fit=crop&q=80&w=800" },
+  { id: 1, title: "Ivory Marble Twist Vase", image: "/Ivory Marble Twist Vase.png" },
+  { id: 2, title: "Stone Mosaic Designer Vase", image: "/Stone Mosaic Designer Vase.png" },
+  { id: 3, title: "Amber Swirl Glass Vase", image: "/Amber Swirl Glass Vase.png" },
 ];
 
 // Animation variants
@@ -85,8 +85,8 @@ export default function Home() {
         <div className="container">
           <div className={styles.sectionHeader}>
             <div>
-              <h2 className={styles.sectionTitle}>Traditional Textiles</h2>
-              <p className={styles.sectionSubtitle}>Hand-woven stories from across India</p>
+              <h2 className={styles.sectionTitle}>Wall Decor & Art</h2>
+              <p className={styles.sectionSubtitle}>Elevate your spaces with illuminated stories and canvases</p>
             </div>
             <Link href="/catalog?category=textiles" className={styles.viewAll}>
               View All <ArrowRight size={16} />
@@ -174,9 +174,9 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className={`${styles.largeSectionTitle} serif-text`}>Artisanal Pottery</h2>
+            <h2 className={`${styles.largeSectionTitle} serif-text`}>Designer Vases</h2>
             <p className={styles.potterySubtitle}>
-              Earthy terracottas and glazed ceramics, handcrafted on the looms of rural India to bring<br/>natural beauty to your space.
+              Elegant marble, glass, and stone vases crafted to bring<br/>natural beauty to your space.
             </p>
           </motion.div>
 
