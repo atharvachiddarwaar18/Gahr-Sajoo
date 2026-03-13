@@ -36,16 +36,21 @@ export default function Home() {
     <div className={styles.home}>
       {/* Hero Section */}
       <section className={styles.hero}>
-        <div className={styles.heroBg}>
+        <motion.div 
+          className={styles.heroBg}
+          initial={{ scale: 1.1, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        >
           <Image 
-            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=2000"
+            src="/background.png"
             alt="Beautiful Indian interior"
             fill
             priority
             style={{ objectFit: "cover" }}
           />
           <div className={styles.heroOverlay}></div>
-        </div>
+        </motion.div>
         
         <div className={`container ${styles.heroContent}`}>
           <motion.h1 

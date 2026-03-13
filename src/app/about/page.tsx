@@ -30,7 +30,7 @@ export default function About() {
       <section className={styles.hero}>
         <div className={styles.heroBg}>
           <Image 
-            src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=2000" 
+            src="/background.png" 
             alt="Beautiful Indian Heritage Architecture" 
             fill 
             style={{ objectFit: "cover" }} 

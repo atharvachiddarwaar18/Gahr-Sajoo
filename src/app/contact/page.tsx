@@ -23,7 +23,7 @@ export default function Contact() {
       <section className={styles.hero}>
         <div className={styles.heroBg}>
           <Image 
-            src="https://images.unsplash.com/photo-1599696848652-f0ff23bc911f?auto=format&fit=crop&q=80&w=2000" 
+            src="/background.png" 
             alt="Artisan hands" 
             fill 
             style={{ objectFit: "cover" }} 
