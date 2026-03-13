@@ -1,0 +1,167 @@
+.collectionsWrapper {
+  padding-top: var(--header-height);
+  min-height: 100vh;
+}
+
+.header {
+  padding: 80px 0 40px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 16px;
+  color: var(--text-main);
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.gridSection {
+  background-color: var(--bg-dark);
+}
+
+.collectionsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  grid-auto-flow: dense;
+}
+
+.collectionCard {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cardLarge {
+  grid-row: span 2;
+  aspect-ratio: 3/4;
+}
+
+.cardSmall {
+  grid-row: span 1;
+  aspect-ratio: 4/3;
+}
+
+.imageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.imageWrapper img {
+  transition: transform 0.8s ease;
+}
+
+.collectionCard:hover .imageWrapper img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 10, 8, 0.1) 0%,
+    rgba(20, 10, 8, 0.8) 100%
+  );
+  z-index: 2;
+  transition: background 0.5s ease;
+}
+
+.collectionCard:hover .overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 10, 8, 0.2) 0%,
+    rgba(20, 10, 8, 0.9) 100%
+  );
+}
+
+.cardContent {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+}
+
+.itemCount {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent-gold);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.cardTitle {
+  font-size: 2.5rem;
+  color: var(--text-main);
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.cardDesc {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 80%;
+}
+
+.exploreLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-main);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: gap 0.3s ease, color 0.3s ease;
+  width: fit-content;
+}
+
+.exploreLink:hover {
+  gap: 16px;
+  color: var(--accent-gold);
+}
+
+@media (max-width: 900px) {
+  .collectionsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cardLarge, .cardSmall {
+    grid-row: auto;
+    aspect-ratio: 4/3;
+  }
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .cardContent {
+    padding: 24px;
+  }
+  
+  .cardTitle {
+    font-size: 2rem;
+  }
+  
+  .cardDesc {
+    max-width: 100%;
+  }
+}
