@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className={`container ${styles.navbar}`}>
         <Link href="/" className={styles.logo}>
           <div className={styles.logoIcon}></div>
-          <span className="serif-text">Ghar Sajaao</span>
+          <span className="serif-text">Ghar Sajaoo</span>
         </Link>
 
         <nav className={styles.navLinks}>
